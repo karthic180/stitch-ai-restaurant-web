@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+            "foreground-light": "#111618",
+            "foreground-dark": "#f0f3f4",
+            "subtle-light": "#617c89",
+            "subtle-dark": "#a0b1b9"
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-foreground-light/10 dark:border-foreground-dark/10 px-10 py-3">
+<div class="flex items-center gap-4">
+<svg class="h-6 w-6 text-foreground-light dark:text-foreground-dark" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-lg font-bold">DineSmart</h2>
+</div>
+<nav class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Reservations</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Favorites</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined">
+              notifications
+            </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACODoElqLDHMu_7j_qQKPD7OaG7uesBYoBGQJYmgPl-1eUowYc8l8-Ox6EdahQ8AsGr4xbutWk3UKTokbPP5tjwgh5s2ZjQXmRn4YBlNBGt_wazNaXZuIHB2rZZTHOyW3oO8MZUPDkxt-GeKsfZNlpab9fa6AGB9mJ25i-oIbbSJ7g9UYaZ0bH0qLXIqTi5ATQzVkSn1vylQjUryQWP4Gi1pqA640NA3nMK3xyb73V1uKv1V2OkxpHRjhYewDvMiHurmhlrtFjUg9K");'></div>
+</div>
+</nav>
+</header>
+<main class="flex flex-1 items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-2xl space-y-8">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-6xl">
+              check_circle
+            </span>
+<h1 class="mt-4 text-3xl font-bold tracking-tight">Reservation Confirmed!</h1>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">Your table is booked. We've sent a confirmation to your email address.</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl shadow-sm border border-foreground-light/10 dark:border-foreground-dark/10 overflow-hidden">
+<div class="p-6">
+<div class="flex flex-col sm:flex-row items-start gap-6">
+<div class="flex-grow">
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Reservation Details</p>
+<h2 class="text-xl font-bold mt-1">The Golden Spoon</h2>
+<p class="mt-1 text-subtle-light dark:text-subtle-dark">Friday, July 26 · 7:30 PM · 2 guests</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkpdjZrhP2ACVHCOWQN-mEstgoxcMlJ5XYK3zPBQr74BboSFqJCAFiMFXZhBqBG8Y7GX-N-tXCMnCHC3ax4yJdhLCqfkXKjlFLX2q6IA3mxOliN6l9X0jIGsZGC6ZjpHxqNUwe0UqeovXqTIPb2qPV27tOAmDY1Xs7oMrarrJsTQuqjev6pjlrRrGRLrjURdUMHJdyCzUE2Ot82Sf00D40lJCvehmMzcvLW7bOlbw18BzcN37ogDLqDUOLR4zRBhn0JCaZ7p4qrG2d");'></div>
+</div>
+</div>
+<div class="border-t border-foreground-light/10 dark:border-foreground-dark/10 p-6 space-y-4">
+<div>
+<h3 class="text-base font-bold">Special Requests</h3>
+<p class="mt-1 text-subtle-light dark:text-subtle-dark">Table by the window</p>
+</div>
+<div>
+<h3 class="text-base font-bold">Contact Information</h3>
+<p class="mt-1 text-subtle-light dark:text-subtle-dark">
+                Sarah Miller <br/>
+                (555) 123-4567 <br/>
+                sarah.miller@email.com
+              </p>
+</div>
+</div>
+</div>
+<div class="flex justify-center pt-4">
+<button class="flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">
+            View Reservation
+          </button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
