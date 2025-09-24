@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<title>DineAssist Menu</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-20 w-full shadow-sm">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-gray-900 dark:text-white">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold">DineAssist</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Reservations</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Explore</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Profile</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<input class="w-full rounded-full border-0 bg-gray-200/50 dark:bg-gray-700/50 py-2 pl-10 pr-3 text-sm text-gray-900 dark:text-gray-100 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary" placeholder="Search" type="text"/>
+</div>
+<img alt="User profile picture" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI8yz7NuIbLOJdghJugKnqp6-Dmi4TfccISdZa30P63s_9rpOHhMiBHWleT1wXy1P8VxLBP_D1_27AhyL9hNXr4UKgqU9Mw7xw5O33OZV8k1StJOkUuEFGzWon7y0YlR1TYkjuSiG4FLnVJRLEjOEa1DK1EISZn9Q45xiHIOuxhGYqz1ElmDAFfhsmh7LV961vO6qlMaeCz5aIg45bHiklb3VbWNJ61uCgqfXvz-KSllpTIQ4NDAghja1KofIQMLb-8XC9MvhWJmHO"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="mx-auto max-w-4xl py-8 px-4 sm:px-6 lg:px-8">
+<div class="mb-8">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              Menu for <span class="text-primary">The Gilded Spoon</span>
+</h2>
+</div>
+<div class="sticky top-16 bg-background-light dark:bg-background-dark z-10 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 border-b border-gray-200 dark:border-gray-700">
+<nav aria-label="Tabs" class="-mb-px flex space-x-8">
+<a class="border-primary text-primary whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Appetizers</a>
+<a class="border-transparent text-gray-500 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200 whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Main Courses</a>
+<a class="border-transparent text-gray-500 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200 whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Desserts</a>
+<a class="border-transparent text-gray-500 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600 hover:text-gray-700 dark:hover:text-gray-200 whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium" href="#">Drinks</a>
+</nav>
+</div>
+<div class="mt-8 space-y-12">
+<div>
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Starters</h3>
+<div class="space-y-8">
+<div class="flex flex-col sm:flex-row items-start gap-6 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Crispy Calamari</h4>
+<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Served with a zesty marinara sauce.</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0">
+<img alt="Crispy Calamari" class="h-full w-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXmVA7vpowaz1i-bq-umbn9tiGitstE25GH1GRrVk3NARCBFvvH9l2W0qqakI6PIGczN10jw2k4WMXok6pxSTZrTn_bZ5EHn3rYTRbrPOTPhdR-vqmfda_Di6KSImP4rv8V6yi28Ir7aIrvU6ceI8fU94IzdCM9aPDNj-d0xb8nqEqulCbgtmZVxbbo4Z1hYTZCN1xW8fBFCLEEFbExPCTlRGeN3SICPfohX9XBnr7lAQDJ4wi65JIJCLWsdFs2YKg-jdGkBBZ29O9"/>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start gap-6 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Spinach and Artichoke Dip</h4>
+<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Creamy dip served with tortilla chips.</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0">
+<img alt="Spinach and Artichoke Dip" class="h-full w-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVCVXWDKV-K2rSPQaO9h2aNwJcGjxTNmoDN6SZXgF1CqpeRwAbGM7NZ17xe1Jn12m_BZNUlS86ZLbwIpTKSDuOcnjmCbljLlgCsEP5scPhpE1G2LqZNCXxloQrfGrS4a8eXxDvM37wuAKI3BdDh7QaeLXx2RCmzJ_oh47U52jCu350eO6oOMPDcQzBxqbYc-OsDKub90X4S3zeuenbVc3q2uH77CvQGVLD3Kw2NeDPqFiIofVA1ONmKUfZUDTQEbsDd-SdgcoHXKSM"/>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start gap-6 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Bruschetta Trio</h4>
+<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Toasted baguette slices with tomato basil, mushroom, and olive tapenade toppings.</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0">
+<img alt="Bruschetta Trio" class="h-full w-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD76iMfCIH_PuDDMh86e1dLahzDVo6xZ4dD3W7m9NGxgxTFlIRG3A41tO9OKDsiWrYrQBNdgGydljh9tqNoxQS72Y1nRxPjqQdQX7Yh_Qjos8PZlHI0R036ZRKxZr3rbq9pEVtvFv3gSKmJkkHCmOIczbGSwfrnlFOy84I6IkfobbW39CI9yRCu2XVIPD-ae1hvRyM-idfc03bM3Gp17NVgZWLAyOOmkB6jKKqHV7HVC3siEnlldxKRTAMLWh4ktzg9kOo_4_DIuiNr"/>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Salads</h3>
+<div class="space-y-8">
+<div class="flex flex-col sm:flex-row items-start gap-6 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Caesar Salad</h4>
+<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Romaine lettuce, croutons, parmesan cheese, and Caesar dressing.</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0">
+<img alt="Caesar Salad" class="h-full w-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC42HIKbOdenXBj4d_hdkbrGjSSQEw9DJCOuizHv316ruhZ1dvrOax7EGL3A39pTNH2Sh9rl1SZlohrfndxmgyg9PAYXM5XRiGPc5mrI1CxCSgMfI1oFpRMUgsQpRx7I_h3FMy_qzeKYSuB9PIzrFHfzzgzxwQnBlapJnoHQwk2SenrBQeCyNWS5DNnXBUXlaKnlb8t5SJvHPXupOPKrJ2kWgZjbKQDBdjWRZQ-3mxI0Tfm8EVluYAclEviLHHNeTY0DB3C_1RT6iqP"/>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start gap-6 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Greek Salad</h4>
+<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Mixed greens, feta cheese, olives, cucumbers, and tomatoes with a lemon vinaigrette.</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0">
+<img alt="Greek Salad" class="h-full w-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA33HwZ61JK3vMgs-wXiGe0wqnDqKcjAcddMYMpiT9IRzEaXJb0mYcJwanpn6EC9JnY-X7ouwvtXNWxqEHRXOkW4AabrAGQKrdGW2mQi8kBRq7_7lLDyqPt05OMOEDxfC3NSv-3Op1mNRcAtXP0HPffBnwSi2XkIdvHsecREPGEQ3Ac4p1xFL_xdvjb9AMc2cF9CPgXTrYouXd9ZGOc1FpAEi9KJT2tzZX4WKnZd5wyK0Q_vpZIX7uBoPhHQ2n-HQMyonCrdyfIBxb5"/>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start gap-6 bg-background-light dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex-1">
+<h4 class="text-lg font-bold text-gray-900 dark:text-white">Caprese Salad</h4>
+<p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Fresh mozzarella, tomatoes, and basil with balsamic glaze.</p>
+</div>
+<div class="w-full sm:w-48 h-32 flex-shrink-0">
+<img alt="Caprese Salad" class="h-full w-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz3iHshPtFXY-Ka-rnJ7BXA07jHlPiPFWGPF73H3HG1q581JFIlPC1BY6Zrs6qTrKH1bExp6XxaX9idqGDp7FNLbKXBt9qLrT8YTcYMya2CyYz8sJbuEjgVRc2mHVRDTJ1hfI7fL4bwuDrLMeFk1qaI2x-aMIrkhKhPrVO4OJ3DaJUHBXW_QTPDE7bPMGvnyICQ18aVvwo93ojyujvcgQsULg7QK_UUCsYCL_BjvcO278mISGwjxRtkEYiptWgsIqF8PQa8fQyywgu"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
