@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Work Sans"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-800 px-10 py-4">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-xl font-bold">Stitch AI</h2>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Reservations</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Reviews</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Profile</a>
+</nav>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-background-light dark:bg-background-dark hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-400"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvnxXWbNNFMJs9waYRQ4pMcJD7-opgtldzlJPji5JJg1h8fDBK2PR3PDujezS92IK7Rn3kCe7KKUtyu6jJdLrPIiwOCJf-QdGvKFRASKgKlAwTVp7Hl8AhiH408JrL88xSV6u-xTPkTEt8brBjcKPOkWrHCknN57XydXuNSm4_jMg_zapulkipeveOWtv5JCqhEMgWzlFuRgziQ_NGOm6nHeMek4j0iKJ_fttj4inJubVIxSOyOgLAYZDRC6ZvBu5awuxCigxeh8dA");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-4xl">
+<div class="text-center mb-12">
+<h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">Welcome to Stitch AI</h1>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Ask me anything about restaurants, reservations, or dining suggestions.</p>
+</div>
+<div class="mb-12">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500"> search </span>
+<input class="form-input w-full rounded-full border-gray-300 dark:border-gray-700 bg-background-light dark:bg-background-dark py-3 pl-12 pr-4 text-base placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:border-primary focus:ring-primary" placeholder="Type your query here..." type="text"/>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white px-2">Recent Conversations</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-gray-800/50 p-4 transition-all hover:bg-gray-100 dark:hover:bg-gray-800">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined"> restaurant </span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-gray-800 dark:text-gray-200">Restaurant Booking</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Book a table for two...</p>
+</div>
+</div>
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-gray-800/50 p-4 transition-all hover:bg-gray-100 dark:hover:bg-gray-800">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined"> menu_book </span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-gray-800 dark:text-gray-200">Menu Inquiry</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Show me the menu...</p>
+</div>
+</div>
+<div class="group flex cursor-pointer items-center gap-4 rounded-xl bg-white dark:bg-gray-800/50 p-4 transition-all hover:bg-gray-100 dark:hover:bg-gray-800">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined"> favorite </span>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-gray-800 dark:text-gray-200">Dining Suggestions</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Suggest a romantic spot...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
